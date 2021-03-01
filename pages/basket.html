@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <div class="basket">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-wrapper">SHOPPO</a>
+                <a href="./catalog.html" class="catalog-wrapper">Каталог</a>
+                <form class="form">
+                    <input placeholder="Я ищу..." type="search" class="form-search"/>
+                    <button type="submit" class="form-btn">Найти</button>
+                </form>
+                <a href="./basket.html" class="nav-basket-wrapper"><img src="" class="basket-img"/>Корзина</a>
+            </div>
+        </nav>
+        <div class="basket-container">
+            <div class="basket-wrapper">
+                <form class="form-cart">
+                    <h2 class="cart-h2">Checkout order</h2>
+
+                    <div class="label-item">
+                        <label for="" class="label">Name *</label>
+                        <input placeholder="This field cannot be empty." type="text" />
+                    </div>
+                    <div class="label-item">
+                        <label for="" class="label">Contact phone *</label>
+                        <input placeholder="+38 (xxx) xxx-xx-xx" type="text" />
+                    </div>
+                    <div class="label-item">
+                        <label for="" class="label">Email</label>
+                        <input placeholder="Specify if you want to get a letter" type="text" />
+                    </div>
+                    <div class="label-item">
+                        <label for="" class="label">City / Settlement *</label>
+                        <input placeholder="Type city" type="text" />
+                    </div>
+
+                    <button class="btn-cart">Confirm order</button>
+                </form>
+
+                <div class="basket-content">
+                    <div class="basket-content-heading">
+                        <div class="basket-cont-h2">In your cart</div>
+                        <a href="#" class="basket-edit">Edit</a>
+                    </div>
+                    <div class="basket-product-cont">
+                        <div class="basket-pr-img-wrap">
+                            <img src="../images/product.jpg" class="backet-pr-img" />
+                        </div>
+                        <div class="backet-pr-desc">Smartphone Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3)</div>
+                        <div class="backet-pr-count">1</div>
+                        <div class="backet-pr-price">35 776 uah</div>
+                    </div>
+
+                        <div class="backet-amount-cont">
+                            <div class="backet-amount">Order amount</div>
+                            <div class="backet-amount-price">35 776 uah</div>
+                        </div>
+                        <div class="backet-shipping-cont">
+                            <div class="backet-shipping-cost">Shipping cost:</div>
+                            <div class="backet-shipping-price">-</div>
+                        </div>
+                        <div class="backet-total-cont">
+                            <div class="backet-total">Total:</div>
+                            <div class="backet-total-price">35 776 uah</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
