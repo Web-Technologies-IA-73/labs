@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css'/>
+    <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/splitchar.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/vdw/HideSeek/master/jquery.hideseek.min.js"></script>
+
+    <script>
+        $(() => {
+            $('#tabs').tabs();
+            $('#accordion').accordion();
+            $('#datepicker').datepicker();
+            $('#gallery').unitegallery();
+            $('#search').hideseek();
+        });
+    </script>
+</head>
+<body>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Accordion</a></li>
+        <li><a href="#tabs-2">Datepicker</a></li>
+        <li><a href="#tabs-3">UniteGallery</a></li>
+        <li><a href="#tabs-4">Social medias</a></li>
+        <li><a href="#tabs-5">Informer</a></li>
+        <li><a href="#tabs-6">HideSeek</a></li>
+    </ul>
+    <div id="tabs-1">
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+                <p>
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+                <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+                <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+                <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                </p>
+                <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="tabs-2">
+        <label for="datepicker">Date:</label>
+        <input type="text" id="datepicker">
+    </div>
+    <div id="tabs-3">
+        <div id="gallery" style="display:none;">
+            <img alt="Image 1 Title" src="images/thumbs/tile1.jpg"
+                 data-image="images/big/tile1.jpg"
+                 data-description="Image 1 Description">
+            <img alt="Image 2 Title" src="images/thumbs/tile2.jpg"
+                 data-image="images/big/tile2.jpg"
+                 data-description="Image 2 Description">
+            <img alt="Youtube With Images"
+                 data-type="youtube"
+                 data-videoid="A3PDXmYoF5U"
+                 data-description="Youtube video description">
+        </div>
+    </div>
+    <div id="tabs-4">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Who needs wealth when you can make a woman laugh.</p>&mdash;
+            random (@random) <a href="https://twitter.com/random/status/682384266408247297?ref_src=twsrc%5Etfw">December
+                31, 2015</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="tabs-5">
+        <div id="minfincomua_i_usd">Загружаем межбанк от <a href="https://minfin.com.ua/">minfin.com.ua</a></div>
+        <script src="https://informer.minfin.com.ua/interbank/usd.js?20210302"></script>
+    </div>
+    <div id="tabs-6">
+        <label>
+            <input id="search" name="search" placeholder="Start typing here" type="text" data-list=".list">
+        </label>
+        <ul class="list">
+            <li>AAAAAA</li>
+            <li>BBBBBB</li>
+            <li>CCCCCC</li>
+            <li>DDDDDD</li>
+            <li>EEEEEE</li>
+            <li>AAABBB</li>
+            <li>BBBCCC</li>
+            <li>DDDEEE</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
